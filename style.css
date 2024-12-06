@@ -1,0 +1,130 @@
+/* Reset basic styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    background: linear-gradient(135deg, #ff7eb3, #65c7f7);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center everything in the container */
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Headings */
+.container h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #ffe94a;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #e0e0e0;
+}
+
+/* Inputs and Select Boxes */
+select, input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+select:hover, input:hover {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+#fromCurrency:focus{
+    background-color:#7be654
+}
+#toCurrency:focus{
+    background-color:#7be654
+}
+
+
+#amount{
+    width: 94%;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    color: #fff;
+    background: linear-gradient(135deg, #fc575e, #f7b42c);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 15px rgba(252, 87, 94, 0.4);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #f7b42c, #fc575e);
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Result Section */
+#result {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.4rem;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 15px;
+    border-radius: 10px;
+    word-wrap: break-word;
+    color: #ffe94a;
+    box-shadow: 0 0 10px rgba(255, 233, 74, 0.6);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
